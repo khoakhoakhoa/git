@@ -1,0 +1,198 @@
+/* BEGIN Vanilla form styling */
+/* Styling for form fields container structure */
+.form-container{
+  display:block;
+  width:100%;
+  margin:30px auto;
+}
+.form-container .wrapped-label{
+  display: inline-block;
+  white-space: normal;
+  max-width: 90%;
+}
+.form-container .left{
+  text-align: left;
+}
+.form-container .right{
+  text-align: right;
+}
+.form-container .center{
+  text-align: center;
+}
+@media screen and (max-width: 600px){
+  .form-container .column-50{
+    width: 100%;
+  }
+  .form-container label{
+    white-space: nowrap;
+  }
+}
+/* Styling form input elements and selects */
+.vanilla-form{
+  -webkit-text-size-adjust: 100%;
+  /* Prevent font scaling in landscape while allowing user zoom */
+
+}
+.vanilla-form a{
+  text-decoration:none;
+}
+.vanilla-form input,
+.vanilla-form textarea,
+.vanilla-form select{
+  display:block;
+  width:100%;
+  color:#000;
+  margin-bottom:1em;
+  font-size:1em;
+  font-weight:400;
+  padding:1em;
+  background-color:#ffffff;
+  border: 1px solid #cecece;
+  -webkit-font-smoothing: antialiased !important;
+}
+.vanilla-form input:focus,
+.vanilla-form textarea:focus,
+.vanilla-form select:focus,
+.vanilla-form input:active,
+.vanilla-form textarea:active,
+.vanilla-form select:active{
+  outline:none;
+  border-color:#fff;
+}
+.vanilla-form input:last-child,
+.vanilla-form textarea:last-child,
+.vanilla-form select:last-child{
+  margin-bottom:0;
+}
+.vanilla-form input.error,
+.vanilla-form textarea.error,
+.vanilla-form select.error{
+  border-color:#ff523c;
+  border-width:2px;
+}
+
+/* KT */
+.vanilla-form input[type="submit"],
+.vanilla-form input[type="submit"]:active,
+.vanilla-form input[type="submit"]:focus{
+	color:#fff;
+	letter-spacing:5px;
+	font-size:1.1em;
+	display: inline-block;
+	width:100%;
+	padding:25px;
+	background-color:#000;
+	border:2px solid #bfbfbf;
+}
+
+.vanilla-form input[type="submit"]:hover{
+	border:2px solid #e0ff81;
+	color:#e0ff81;
+}
+
+.vanilla-form input[type="submit"]{
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}
+.vanilla-form input[type="submit"].state-success{
+	background-color:#000;
+	border:2px solid #e0ff81;
+	color:#e0ff81;
+}
+.vanilla-form input[type="submit"].state-error{
+  background-color:#000;
+  border:2px solid #ff523c;
+  color:#ff523c;
+}
+.vanilla-form input[type="submit"].state-initial{
+  width: 100px;
+}
+
+.vanilla-form textarea{
+  height: 200px;
+  resize: vertical;
+}
+
+.vanilla-form label.custom-select{
+  position: relative;
+  display: block;
+}
+.vanilla-form label.custom-select span{
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 3.5rem;
+  pointer-events: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #e8e8e8;
+  border: 1px solid #cecece;
+}
+.vanilla-form label.custom-select span::after{
+  content: "";
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  -webkit-transform: rotate(-45deg) translate(-80%, 80%);
+  -moz-transform: rotate(-45deg) translate(-80%, 80%);
+  -ms-transform: rotate(-45deg) translate(-80%, 80%);
+  -o-transform: rotate(-45deg) translate(-80%, 80%);
+  transform: rotate(-45deg) translate(-80%, 80%);
+  border: 0 solid #ffffff;
+  border-left-width: 0.25em;
+  border-bottom-width: 0.25em;
+}
+.vanilla-form label.custom-select select:active + span,
+.vanilla-form label.custom-select select:focus + span{
+  background-color: #66bbfd;
+  border: 1px solid #33a4fd;
+}
+.vanilla-form label.custom-select select.error + span,
+.vanilla-form label.custom-select select.error:active + span,
+.vanilla-form label.custom-select select.error:focus + span{
+  background-color: #e9796b;
+  border: 1px solid #e2513f;
+}
+.vanilla-form .notification-box{
+  display: block;
+  padding: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  color: #ffffff;
+  text-align: center;
+  -webkit-transition: all 600ms;
+  -moz-transition: all 600ms;
+  -ms-transition: all 600ms;
+  -o-transition: all 600ms;
+  transition: all 600ms;
+}
+.vanilla-form .notification-box.show-error,
+.vanilla-form .notification-box.show-success{
+  max-height: 50vh;
+  overflow: auto;
+  opacity:1;
+}
+.vanilla-form .notification-box.show-error{
+  color:#e2513f;
+}
+.vanilla-form .notification-box.show-success{
+  color:#e0ff81;
+}
+/* END Vanilla form styling */
+
+input, textarea{
+	width:100% !important;
+	-webkit-border-radius: 0 0 0 0 !important;
+	border-radius: 0 0 0 0 !important;
+}
